@@ -45,10 +45,16 @@ return require('packer').startup(function(use)
   use 'hrsh7th/cmp-buffer' -- buffer completion
   use 'hrsh7th/cmp-path' -- path completion
   use 'hrsh7th/cmp-cmdline' -- command line completion
+  use 'hrsh7th/cmp-nvim-lsp' -- lsp suggested completion
   -- Snippets (for tab completion)
   use 'L3MON4D3/LuaSnip' -- Snippet engine
   use 'rafamadriz/friendly-snippets' -- more snippets to use
   
+  -- Language Server Protocol --
+  use {'williamboman/mason.nvim', -- LSP manager
+    'williamboman/mason-lspconfig.nvim', -- lsp configs
+    'neovim/nvim-lspconfig', -- neovim native lsp support
+  }
   -- Nvim-Autopairs (auto pairs: ({["'``'"]}))
   use 'windwp/nvim-autopairs'
   

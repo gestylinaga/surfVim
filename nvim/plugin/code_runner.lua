@@ -27,11 +27,12 @@ require('code_runner').setup({
         blend = 30, -- 0-100
     },
 
-    filetype = { 
+    filetype = {
         python = "python3 -u",
         lua = "lua -W",
         html = "firefox &lt;filename>.html ",
         javascript = "node",
+        rust = "cargo run"
         --typescript = "deno run",
         --java = "cd $dir && javac $fileName && java $fileNameWithoutExt",
         --rust = "cd $dir && rustc $fileName && $dir/$fileNameWithoutExt",

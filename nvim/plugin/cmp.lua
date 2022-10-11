@@ -122,6 +122,7 @@ sources = {
     { name = "luasnip" },
     { name = "buffer" },
     { name = "path" },
+    { name = "nvim_lsp" },
 },
 confirm_opts = {
     behavior = cmp.ConfirmBehavior.Replace,
@@ -144,6 +145,18 @@ cmp.event:on(
   cmp_autopairs.on_confirm_done()
 )
 
+-- For LSP completion:
+-- The nvim-cmp almost supports LSP's capabilities so You should advertise it to LSP servers..
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
+
+require'lspconfig'.pyright.setup {
+  capabilities = capabilities,
+}
+
+require'lspconfig'.sumneko_lua.setup {
+  capabilities = capabilities,
+}
 
 -- Reference: https://youtu.be/GuIcGxYqaQQ 
 -- Reference: https://github.com/LunarVim/Neovim-from-scratch/blob/master/lua/user/cmp.lua

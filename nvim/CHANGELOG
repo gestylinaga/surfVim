@@ -1,41 +1,21 @@
-surfVim CHANGELOG -- current Version: 2.1
+surfVim CHANGELOG -- current Version: 2.2
 
-Version 1.0
-    - NvimFS -- Neovim From Scratch by gesteratops
+Version 2.2
+    - updated plugins configs:
+        - Treesitter: added C and Rust support
+        - Code_runner: added Rust support with cargo
+        - cmp: added lsp completion
+    - added lsp support:
+        - mason, mason-lspconfig, nvim-lspconfig
+    - added language servers:
+        - pyright: for python
+        - lua-language-server aka sumneko_lua: for lua
 
-Version 1.1
-    - added Markdown-Preview for live markdown editing
-    - added remaps for Markdown-Preview
-    - updated dashboard art
-    - updated README.md formatting
-
-Version 1.2
-    - updated plugin configs: 
-        - Dashboard
-        - Code_runner
-        - Glow 
-    - added remaps for tab support
-    - added Tabline for nicer tabline
-
-Version 1.3
-    - added UndoTree for undo history tree/branches
-    - added Tetris because tetris
-    - added Harpoon for project bookmarks
-    - moved CHANGELOG file location
-
-Version 1.4
-    - updated plugin configs:
-        - tabline
-        - Nvim-Tree
-    - added Indent-Blankline for indent guidelines
-    - added Guess-Indent for automatic indent style detection
-    - added Nvim-AutoPairs for auto symbol pairing
-
-Version 1.5
-    - updated configs:
-        - Dashboard: 
-    - opened laptopBranch
-        - created for testing/learing how git branches work
+Version 2.1
+    - added bootstrapping to packer
+        - installs all plugins on first `:PackerSync`
+    = added cheatsheet to README
+    - migrated to GitHub
 
 Version 2.0
     - renamed plugins.lua to packer.lua
@@ -52,9 +32,39 @@ Version 2.0
             - after a fork, you "request" that the original project accepts the changes made
     - new project name: surfVim
 
-Version 2.1
-    - added bootstrapping to packer
-        - installs all plugins on first `:PackerSync`
-    = added cheatsheet to README
-    - migrated to GitHub
+Version 1.5
+    - updated configs:
+        - Dashboard: 
+    - opened laptopBranch
+        - created for testing/learing how git branches work
 
+Version 1.4
+    - updated plugin configs:
+        - tabline
+        - Nvim-Tree
+    - added Indent-Blankline for indent guidelines
+    - added Guess-Indent for automatic indent style detection
+    - added Nvim-AutoPairs for auto symbol pairing
+
+Version 1.3
+    - added UndoTree for undo history tree/branches
+    - added Tetris because tetris
+    - added Harpoon for project bookmarks
+    - moved CHANGELOG file location
+
+Version 1.2
+    - updated plugin configs: 
+        - Dashboard
+        - Code_runner
+        - Glow 
+    - added remaps for tab support
+    - added Tabline for nicer tabline
+
+Version 1.1
+    - added Markdown-Preview for live markdown editing
+    - added remaps for Markdown-Preview
+    - updated dashboard art
+    - updated README.md formatting
+
+Version 1.0
+    - NvimFS -- Neovim From Scratch by gesteratops

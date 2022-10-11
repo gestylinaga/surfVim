@@ -1,5 +1,6 @@
 <!-- README.md for surfVim -->
 <!-- TODO:
+    - add lsp remaps
     - add install directions
     - add Table of contents if file gets too long
         - syntax: `1. [name](#headerName)`
@@ -31,7 +32,7 @@ Features added via plugins:
 - [x] Indent Style Auto Detection
 - [x] Tab Completion 
 - [x] Auto ({["'``'"]}) pair completion
-- [ ] LSP Support
+- [x] LSP Support
 - [x] Fuzzy Finding for Files
 - [x] File Explorer/Tree
 - [x] File Bookmarks for specific folders
