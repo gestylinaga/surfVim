@@ -1,4 +1,13 @@
-surfVim CHANGELOG -- current Version: 2.2
+surfVim CHANGELOG -- current Version: 2.3
+
+Version 2.3
+    - added 'autocmds.lua':
+        - Sass => Css compile on save autocmd
+    - added language servers:
+        - tsserver: for JavaScript/TypeScript
+        - cssls: for Css/Sass
+    - updated plugins configs:
+        - Cmp: added emoji and nerdfont icon completion
 
 Version 2.2
     - updated plugins configs:

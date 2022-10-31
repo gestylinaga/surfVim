@@ -123,6 +123,8 @@ sources = {
     { name = "buffer" },
     { name = "path" },
     { name = "nvim_lsp" },
+    { name = "emoji" },
+    { name = "nerdfont" },
 },
 confirm_opts = {
     behavior = cmp.ConfirmBehavior.Replace,
@@ -148,13 +150,21 @@ cmp.event:on(
 -- For LSP completion:
 -- The nvim-cmp almost supports LSP's capabilities so You should advertise it to LSP servers..
 local capabilities = vim.lsp.protocol.make_client_capabilities()
-capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
+capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 
 require'lspconfig'.pyright.setup {
   capabilities = capabilities,
 }
 
 require'lspconfig'.sumneko_lua.setup {
+  capabilities = capabilities,
+}
+
+require'lspconfig'.tsserver.setup {
+  capabilities = capabilities,
+}
+
+require'lspconfig'.cssls.setup {
   capabilities = capabilities,
 }
 

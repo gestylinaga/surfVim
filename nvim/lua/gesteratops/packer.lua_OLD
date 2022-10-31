@@ -2,7 +2,6 @@
 -- │ ┬├┤ └─┐ │ ├┤ ├┬┘├─┤ │ │ │├─┘└─┐ plugins manager
 -- └─┘└─┘└─┘ ┴ └─┘┴└─┴ ┴ ┴ └─┘┴  └─┘ using Packer
 
-
 -- Bootstrapping packer(installs plugins on first PackerSync)
 local ensure_packer = function()
   local fn = vim.fn
@@ -31,8 +30,6 @@ return require('packer').startup(function(use)
   -- Tree-sitter (syntax highlighting)
   use {'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate'
-    -- Use on first Sync:
-    --run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
   }
   -- Telescope (fuzzy finder)
   use {'nvim-telescope/telescope.nvim', tag = '0.1.0',
@@ -49,8 +46,6 @@ return require('packer').startup(function(use)
   use 'hrsh7th/cmp-path' -- path completion
   use 'hrsh7th/cmp-cmdline' -- command line completion
   use 'hrsh7th/cmp-nvim-lsp' -- lsp suggested completion
-  use 'hrsh7th/cmp-emoji' -- emoji completion
-  use 'chrisgrieser/cmp-nerdfont' -- nerdfont icon completion
   -- Snippets (for tab completion)
   use 'L3MON4D3/LuaSnip' -- Snippet engine
   use 'rafamadriz/friendly-snippets' -- more snippets to use
@@ -108,4 +103,3 @@ return require('packer').startup(function(use)
   end
 
 end)
-
