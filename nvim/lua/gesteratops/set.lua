@@ -41,3 +41,9 @@ vim.o.background = 'dark'
 vim.cmd([[colorscheme tokyonight-night]])
 --vim.cmd([[colorscheme gruvbox]])
 --vim.cmd([[colorscheme dracula]])
+
+-- Markdown Preview --
+vim.g.mkdp_browser = 'firefox'
+
+-- 80 column line --
+vim.opt.colorcolumn = '80'

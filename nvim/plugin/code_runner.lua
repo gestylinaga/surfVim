@@ -32,7 +32,8 @@ require('code_runner').setup({
         lua = "lua -W",
         html = "firefox &lt;filename>.html ",
         javascript = "node",
-        rust = "cargo run"
+        rust = "cargo run",
+        ruby = "ruby"
         --typescript = "deno run",
         --java = "cd $dir && javac $fileName && java $fileNameWithoutExt",
         --rust = "cd $dir && rustc $fileName && $dir/$fileNameWithoutExt",

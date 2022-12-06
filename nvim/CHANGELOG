@@ -1,4 +1,8 @@
-surfVim CHANGELOG -- current Version: 2.3
+surfVim CHANGELOG -- current Version: 2.3.1
+
+Version: 2.3.1
+    - added language servers:
+        - astro
 
 Version 2.3
     - added 'autocmds.lua':
