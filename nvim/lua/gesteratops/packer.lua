@@ -21,13 +21,15 @@ local packer_bootstrap = ensure_packer()
 return require('packer').startup(function(use)
   -- Packer (managing itself)
   use 'wbthomason/packer.nvim'
-  
+
+  use 'wuelnerdotexe/vim-astro' -- astro plugin
+
   -- Functionality --
   -- Tabline (tab line)
   use 'kdheepak/tabline.nvim'
   -- Lualine (status line)
   use 'nvim-lualine/lualine.nvim'
-  
+
   -- Tree-sitter (syntax highlighting)
   use {'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate'
@@ -54,7 +56,7 @@ return require('packer').startup(function(use)
   -- Snippets (for tab completion)
   use 'L3MON4D3/LuaSnip' -- Snippet engine
   use 'rafamadriz/friendly-snippets' -- more snippets to use
-  
+
   -- Language Server Protocol --
   use {'williamboman/mason.nvim', -- LSP manager
     'williamboman/mason-lspconfig.nvim', -- lsp configs
@@ -62,19 +64,19 @@ return require('packer').startup(function(use)
   }
   -- Nvim-Autopairs (auto pairs: ({["'``'"]}))
   use 'windwp/nvim-autopairs'
-  
+
   -- Harpoon (project bookmarks)
   use 'ThePrimeagen/harpoon'
-  
+
   -- UndoTree (undo history)
   use 'mbbill/undotree' -- noconfig
-  
+
   -- Indent-Blankline (indent guidelines)
   use "lukas-reineke/indent-blankline.nvim"
   -- Guess-Indent (indent style detection)
   use 'nmac427/guess-indent.nvim'
-  
-  
+
+
   -- Render Code --
   -- Code_Runner (Popup Terminal)
   use { 'CRAG666/code_runner.nvim',
@@ -85,11 +87,11 @@ return require('packer').startup(function(use)
   use {'iamcco/markdown-preview.nvim', -- noconfig
     run = function() vim.fn["mkdp#util#install"]() end,
   }
-  
+
   -- A E S T H E T I C -- 
   -- Dashboard (start page)
   use 'glepnir/dashboard-nvim'
-  
+
   -- ColorSchemes: -- config in gesteratops/set.lua
   -- Gruvbox (theme)
   use 'ellisonleao/gruvbox.nvim'
@@ -97,15 +99,14 @@ return require('packer').startup(function(use)
   use 'Mofiqul/dracula.nvim'
   -- TokyoNight (theme)
   use 'folke/tokyonight.nvim'
-  
+
   -- Other --
   -- Tetris (game)
   use 'alec-gibson/nvim-tetris'
 
   -- bootstrapping packer
-  if packer_bootstrap then 
+  if packer_bootstrap then
     require('packer').sync()
   end
 
 end)
-

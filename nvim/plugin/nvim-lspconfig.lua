@@ -60,3 +60,12 @@ require('lspconfig')['cssls'].setup{
     on_attach = on_attach,
     flags = lsp_flags,
 }
+require('lspconfig')['astro'].setup{
+    on_attach = on_attach,
+    flags = lsp_flags,
+}
+require('lspconfig')['html'].setup{
+    on_attach = on_attach,
+    flags = lsp_flags,
+}
+

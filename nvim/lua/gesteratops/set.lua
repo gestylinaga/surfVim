@@ -36,14 +36,11 @@ vim.opt.swapfile = false
 vim.g.loaded = 1
 vim.g.loaded_netrwPlugin = 1
 
--- default colorscheme --
-vim.o.background = 'dark'
-vim.cmd([[colorscheme tokyonight-night]])
---vim.cmd([[colorscheme gruvbox]])
---vim.cmd([[colorscheme dracula]])
-
 -- Markdown Preview --
 vim.g.mkdp_browser = 'firefox'
 
 -- 80 column line --
 vim.opt.colorcolumn = '80'
+
+-- Astro config --
+vim.g.astro_typescript = 'enable'

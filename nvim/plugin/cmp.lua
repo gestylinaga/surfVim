@@ -172,5 +172,9 @@ require'lspconfig'.astro.setup {
   capabilities = capabilities,
 }
 
+require'lspconfig'.html.setup {
+  capabilities = capabilities,
+}
+
 -- Reference: https://youtu.be/GuIcGxYqaQQ 
 -- Reference: https://github.com/LunarVim/Neovim-from-scratch/blob/master/lua/user/cmp.lua

@@ -1,4 +1,11 @@
-surfVim CHANGELOG -- current Version: 2.3.1
+surfVim CHANGELOG -- current Version: 2.3.2
+
+Version 2.3.2
+    - moved color scheme settings from set.lua to /plugin/colorscheme.lua
+    - disabled italics in colorscheme.lua
+    - added language server:
+        - html (also added to cmd.lua)
+    - added 'scss' to Treesitter
 
 Version: 2.3.1
     - added language servers:
