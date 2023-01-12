@@ -27,6 +27,7 @@ require('code_runner').setup({
         blend = 30, -- 0-100
     },
 
+    filetype_path = "",
     filetype = {
         python = "python3 -u",
         lua = "lua -W",
@@ -38,4 +39,6 @@ require('code_runner').setup({
         --java = "cd $dir && javac $fileName && java $fileNameWithoutExt",
         --rust = "cd $dir && rustc $fileName && $dir/$fileNameWithoutExt",
     },
+    project_path = "",
+    project = {},
 })
