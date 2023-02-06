@@ -90,7 +90,10 @@ return require('packer').startup(function(use)
 
   -- A E S T H E T I C -- 
   -- Dashboard (start page)
-  use 'glepnir/dashboard-nvim'
+  --use {
+  --  'glepnir/dashboard-nvim',
+  --  event = 'VimEnter',
+  --}
 
   -- ColorSchemes: -- config in gesteratops/set.lua
   -- Gruvbox (theme)

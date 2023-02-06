@@ -3,7 +3,7 @@
 -- https://github.com/kyazdani42/nvim-tree.lua/blob/master/doc/nvim-tree-lua.txt
 
 require("nvim-tree").setup({
-  open_on_setup = true,
+  --open_on_setup = true,
   sort_by = "case_sensitive",
   open_on_tab = true,
 

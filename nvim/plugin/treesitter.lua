@@ -6,7 +6,6 @@ require'nvim-treesitter.configs'.setup {
 
   -- A list of parser names, or "all"
   ensure_installed = {
-    "c",
     "python",
     "markdown",
     "javascript",
@@ -15,7 +14,8 @@ require'nvim-treesitter.configs'.setup {
     "html",
     "css",
     "scss",
-    "rust",
+    --"c",
+    --"rust",
   },
 
   -- Install parsers synchronously (only applied to `ensure_installed`)

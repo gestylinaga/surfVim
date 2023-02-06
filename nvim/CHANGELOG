@@ -1,4 +1,10 @@
-surfVim CHANGELOG -- current Version: 2.3.2
+surfVim CHANGELOG -- current Version: 2.3.3
+
+Version 2.3.3
+    - bugfix: removed deprecated option `open_on_startup` in nvim-tree
+    - added `open_nvim_tree` autocmd
+    - disabled 'Dashboard' plugin
+    - commented out some treesitter parsers (C and Rust)
 
 Version 2.3.2
     - moved color scheme settings from set.lua to /plugin/colorscheme.lua
