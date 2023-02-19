@@ -1,5 +1,10 @@
 surfVim CHANGELOG -- current Version: 2.3.3
 
+Version 2.3.4
+    - updated `sumneko_lua` to `lua_ls` in:
+        - `nvim-lspconfig.lua`
+        - `cmp.lua`
+
 Version 2.3.3
     - bugfix: removed deprecated option `open_on_startup` in nvim-tree
     - added `open_nvim_tree` autocmd
