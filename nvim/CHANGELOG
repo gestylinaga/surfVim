@@ -1,4 +1,4 @@
-surfVim CHANGELOG -- current Version: 2.3.3
+surfVim CHANGELOG
 
 Version 2.3.4
     - updated `sumneko_lua` to `lua_ls` in:
