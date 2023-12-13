@@ -1,5 +1,11 @@
 surfVim CHANGELOG
 
+Version 2.3.5
+    - updated Indent-Blankline function call for v3:
+        - `require("indent-blankline")` to
+        - `require("ibl")`
+    - disabled `mappings` in nvim-tree.lua
+
 Version 2.3.4
     - updated `sumneko_lua` to `lua_ls` in:
         - `nvim-lspconfig.lua`

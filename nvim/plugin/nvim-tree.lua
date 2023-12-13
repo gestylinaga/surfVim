@@ -14,11 +14,11 @@ require("nvim-tree").setup({
     preserve_window_proportions = true;
     number = true;
     relativenumber = true;
-    mappings = {
-      list = {
-        { key = "u", action = "dir_up" },
-      },
-    },
+    --mappings = {
+    --  list = {
+    --    { key = "u", action = "dir_up" },
+    --  },
+    --},
   },
 
   renderer = {
