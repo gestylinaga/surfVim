@@ -1,5 +1,9 @@
 surfVim CHANGELOG
 
+Version 2.4.1
+    - removed packer.lua file (since migrated to lazy.nvim)
+    - added ascii art to lazy.lua file
+
 Version 2.4
     - Migrated to lazy.nvim as package manager from Packer
 
