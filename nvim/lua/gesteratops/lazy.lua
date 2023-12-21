@@ -38,7 +38,7 @@ require("lazy").setup({
   --build = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
   },
   -- Telescope (fuzzy finder)
-  {'nvim-telescope/telescope.nvim', version = '0.1.0',
+  {'nvim-telescope/telescope.nvim', version = '0.1.5',
     dependencies = {
       'nvim-lua/plenary.nvim',
       'BurntSushi/ripgrep' } -- for grep func
@@ -68,7 +68,9 @@ require("lazy").setup({
   'windwp/nvim-autopairs',
 
   -- Harpoon (project bookmarks)
-  'ThePrimeagen/harpoon',
+  {'ThePrimeagen/harpoon',
+    branch = 'harpoon2'
+  },
 
   -- UndoTree (undo history)
   'mbbill/undotree', -- noconfig
@@ -95,15 +97,15 @@ require("lazy").setup({
 
   -- ColorSchemes: -- config in gesteratops/set.lua
   -- Gruvbox (theme)
-  'ellisonleao/gruvbox.nvim',
+  --'ellisonleao/gruvbox.nvim',
   -- Dracula (theme)
-  'Mofiqul/dracula.nvim',
+  --'Mofiqul/dracula.nvim',
   -- TokyoNight (theme)
   'folke/tokyonight.nvim',
 
   -- Other --
   -- Tetris (game)
-  'alec-gibson/nvim-tetris',
+  --'alec-gibson/nvim-tetris',
   -- Astro (JS Framework)
   --'wuelnerdotexe/vim-astro' -- astro plugin
 

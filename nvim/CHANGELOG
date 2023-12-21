@@ -1,5 +1,11 @@
 surfVim CHANGELOG
 
+Version 2.4.2
+    - added `branch` option to harpoon with option `harpoon2`
+    - updated telescope plugin to version 0.1.5
+    - disabled unused colorscheme plugins
+    - disabled tetris plugin
+
 Version 2.4.1
     - removed packer.lua file (since migrated to lazy.nvim)
     - added ascii art to lazy.lua file
