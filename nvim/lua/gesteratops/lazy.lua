@@ -16,78 +16,95 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
---
-
 vim.g.mapleader = " " -- "Space" key as leader
-
---
 
 -- Plugins:
 require("lazy").setup({
 
   -- Functionality --
   -- Tabline (tab line)
-  'kdheepak/tabline.nvim',
+  {'kdheepak/tabline.nvim', lazy = false},
   -- Lualine (status line)
-  'nvim-lualine/lualine.nvim',
+  {'nvim-lualine/lualine.nvim', lazy = false},
 
   -- Tree-sitter (syntax highlighting)
   {'nvim-treesitter/nvim-treesitter',
-  build = ':TSUpdate'
+    event = "VeryLazy",
+    build = ':TSUpdate'
   --   on first Sync:
   --build = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
   },
   -- Telescope (fuzzy finder)
-  {'nvim-telescope/telescope.nvim', version = '0.1.5',
+  {'nvim-telescope/telescope.nvim',
+    version = '0.1.5',
+    event = "VeryLazy",
     dependencies = {
       'nvim-lua/plenary.nvim',
       'BurntSushi/ripgrep' } -- for grep func
   },
   -- Nvim-Tree (file exporer)
   {'kyazdani42/nvim-tree.lua',
-    dependencies = {'kyazdani42/nvim-web-devicons', lazy = true},
+    event = "VeryLazy",
+    dependencies = 'kyazdani42/nvim-web-devicons',
   },
   -- Completion --
-  'hrsh7th/nvim-cmp', -- Completion engine
-  'hrsh7th/cmp-buffer', -- buffer completion
-  'hrsh7th/cmp-path', -- path completion
-  'hrsh7th/cmp-cmdline', -- command line completion
-  'hrsh7th/cmp-nvim-lsp', -- lsp suggested completion
-  'hrsh7th/cmp-emoji', -- emoji completion
-  'chrisgrieser/cmp-nerdfont', -- nerdfont icon completion
-  -- Snippets (for tab completion)
-  'L3MON4D3/LuaSnip', -- Snippet engine
-  'rafamadriz/friendly-snippets', -- more snippets to  
+  {'hrsh7th/nvim-cmp',
+    event = "InsertEnter", -- Completion engine
+    dependencies = {
+      {'hrsh7th/cmp-buffer'}, -- buffer completion
+      {'hrsh7th/cmp-path'}, -- path completion
+      {'hrsh7th/cmp-cmdline'}, -- command line completion
+      {'hrsh7th/cmp-nvim-lsp'}, -- lsp suggested completion
+      {'hrsh7th/cmp-emoji'}, -- emoji completion
+      {'chrisgrieser/cmp-nerdfont'}, -- nerdfont icon completion
+      -- Snippets (for tab completion) --
+      {'L3MON4D3/LuaSnip'}, -- Snippet engine
+      {'rafamadriz/friendly-snippets'}, -- more snippets to
+    }
+  },
 
   -- Language Server Protocol --
-  {'williamboman/mason.nvim', -- LSP manager
-    'williamboman/mason-lspconfig.nvim', -- lsp configs
-    'neovim/nvim-lspconfig', -- neovim native lsp support
+  {'neovim/nvim-lspconfig',
+    event = "VeryLazy", -- neovim native lsp support
+    dependencies = {
+      {'williamboman/mason.nvim'}, -- LSP manager
+      {'williamboman/mason-lspconfig.nvim'}, -- lsp configs
+    }
   },
+
   -- Nvim-Autopairs (auto pairs: ({["'``'"]}))
-  'windwp/nvim-autopairs',
+  {'windwp/nvim-autopairs', event = "InsertEnter"},
 
   -- Harpoon (project bookmarks)
   {'ThePrimeagen/harpoon',
-    branch = 'harpoon2'
+    branch = 'harpoon2',
+    event = "VeryLazy"
   },
 
   -- UndoTree (undo history)
-  'mbbill/undotree', -- noconfig
+  {'mbbill/undotree', event = "VeryLazy"}, -- noconfig
 
   -- Indent-Blankline (indent guidelines)
-  'lukas-reineke/indent-blankline.nvim',
+  {'lukas-reineke/indent-blankline.nvim', event = "VeryLazy"},
   -- Guess-Indent (indent style detection)
-  'nmac427/guess-indent.nvim',
+  {'nmac427/guess-indent.nvim', event = "VeryLazy"},
 
 
   -- Render Code --
   -- Code_buildner (Popup Terminal)
-  'CRAG666/code_runner.nvim',
-  -- Glow (markdown preview)
-  'ellisonleao/glow.nvim',
+  {'CRAG666/code_runner.nvim',
+    keys = {
+      {"<leader>rr", "<cmd>RunCode<CR>"}
+    }
+  },
+  -- Glow (markdown preview, only on windows)
+  {'ellisonleao/glow.nvim',
+    ft = "markdown"
+  },
   -- Markdown-Preview (live markdown editing)
   {'iamcco/markdown-preview.nvim', -- noconfig
+    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop"},
+    ft = { "markdown"},
     build = function() vim.fn["mkdp#util#install"]() end,
   },
 
@@ -101,14 +118,11 @@ require("lazy").setup({
   -- Dracula (theme)
   --'Mofiqul/dracula.nvim',
   -- TokyoNight (theme)
-  'folke/tokyonight.nvim',
+  {'folke/tokyonight.nvim', lazy = false},
 
   -- Other --
-  -- Tetris (game)
-  --'alec-gibson/nvim-tetris',
   -- Astro (JS Framework)
   --'wuelnerdotexe/vim-astro' -- astro plugin
-
 })
 
 -- Running lazy.nvim with selected plugins

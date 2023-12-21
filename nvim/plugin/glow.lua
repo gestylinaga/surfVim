@@ -1,8 +1,13 @@
 -- Glow - Markdown Preview
 -- from: ellisonleao/glow.nvim
 
-require('glow').setup({
+return {
+  "ellisonleao/glow.nvim",
+  ft = "markdown",
+  cmd = "Glow",
+  config = {
     border = "rounded",
     style = "dark",
-    width = 120,
-    })
+    width = 120
+  }
+}

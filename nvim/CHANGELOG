@@ -1,5 +1,10 @@
 surfVim CHANGELOG
 
+Version 2.5
+    - removed tetris plugin completely
+    - added lazy loading opts to plugins
+    - startup time reduced to sub 100ms (70ms-80ms)
+
 Version 2.4.2
     - added `branch` option to harpoon with option `harpoon2`
     - updated telescope plugin to version 0.1.5
