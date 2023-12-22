@@ -1,5 +1,9 @@
 surfVim CHANGELOG
 
+Version 3.1.1
+    - fixed nvim-web-devicons url dependency to match acros plugins
+    - fixed glow plugin specs (config -> opts)
+
 Version 3.1
     - readded dashboard plugin
     - moved settings for disabling netrw from `settings.lua` to `init.lua`

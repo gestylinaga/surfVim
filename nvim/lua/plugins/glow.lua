@@ -3,10 +3,11 @@
 return {
   "ellisonleao/glow.nvim",
   ft = "markdown",
+  config = true,
   cmd = "Glow",
-  config = {
+  opts = {
     border = "rounded",
     style = "dark",
     width = 120
-  }
+  },
 }
