@@ -139,7 +139,7 @@ return {
             { name = "path" },
             { name = "nvim_lsp" },
             { name = "emoji" },
-            { name = "nerdfont" },
+            --{ name = "nerdfont" },
         },
         confirm_opts = {
             behavior = cmp.ConfirmBehavior.Replace,

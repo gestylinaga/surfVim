@@ -3,7 +3,7 @@
 -- https://github.com/kyazdani42/nvim-tree.lua/blob/master/doc/nvim-tree-lua.txt
 return  {
   "kyazdani42/nvim-tree.lua",
-  event = "VeryLazy",
+  --event = "VeryLazy",
   dependencies = {
     "kyazdani42/nvim-web-devicons"
   },
@@ -25,5 +25,5 @@ return  {
         resize_window = true,
       }
     }
-  }
+  },
 }

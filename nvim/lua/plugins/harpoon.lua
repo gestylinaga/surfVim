@@ -2,6 +2,7 @@
 -- from: ThePrimeagen/harpoon
 return {
   "ThePrimeagen/harpoon",
-  branch = "harpoon2",
+  --branch = "harpoon2",
+  branch = "master",
   event = "VeryLazy",
 }

@@ -1,5 +1,16 @@
 surfVim CHANGELOG
 
+Version 3.1
+    - readded dashboard plugin
+    - moved settings for disabling netrw from `settings.lua` to `init.lua`
+    - added new keymaps for:
+        - lazy
+        - new file
+        - quit all
+    - fixed lualine plugin (displays properly now)
+    - fixed harpoon plugin (reverted back to master branch)
+    - removed tabline plugin
+
 Version 3.0
     - restructured entire codebase for optimal lazy loading
         - moved lazy bootstrap from `lua/gesteratops/lazy.lua` to `init.lua`

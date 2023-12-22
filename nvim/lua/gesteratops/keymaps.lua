@@ -24,6 +24,9 @@ keymap.set("n", "<C-l>", "<C-W>l") -- switch focus right
 keymap.set("n", "<C-Right>", "<C-W>l") -- switch focus right
 
 -- For Plugins --
+-- Lazy
+keymap.set("n", "<leader>lz", "<cmd>Lazy<CR>") -- find files
+
 -- Harpoon (project bookmarks)
 keymap.set("n", "<leader>h", function() require("harpoon.ui").toggle_quick_menu() end, silent ) -- harpoon quick menu
 keymap.set("n", "<leader>ht", function() require("harpoon.mark").add_file() end, silent) -- add harpoon bookmark "harpoon this"
@@ -60,3 +63,9 @@ keymap.set("n", "<leader>mq", "<cmd>MarkdownPreviewStop<CR>") -- quit/stop previ
 
 -- UndoTree (undo history tree/branches)
 --keymap.set("n", "<C-u>", "<cmd>UndotreeToggle<CR>") -- toggle UndoTree
+
+-- New File
+keymap.set("n", "<leader>nf", "<cmd>ene | startinsert<CR>") -- live edit markdown
+
+-- Quit all
+keymap.set("n", "<leader>qq", "<cmd>qa<CR>") -- live edit markdown

@@ -19,6 +19,11 @@ vim.opt.rtp:prepend(lazypath)
 -- "Space" key as leader
 vim.g.mapleader = " "
 
+-- disables default netrw file explorer
+vim.g.loaded = 1
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
 require("lazy").setup("plugins", {
   change_detection = {
     enabled = true,

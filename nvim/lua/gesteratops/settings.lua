@@ -32,10 +32,6 @@ vim.opt.backup = false
 vim.opt.writebackup = false
 vim.opt.swapfile = false
 
--- disable netrw --
-vim.g.loaded = 1
-vim.g.loaded_netrwPlugin = 1
-
 -- Markdown Preview --
 vim.g.mkdp_browser = 'firefox'
 
