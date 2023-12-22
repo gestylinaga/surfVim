@@ -1,5 +1,18 @@
 surfVim CHANGELOG
 
+Version 3.0
+    - restructured entire codebase for optimal lazy loading
+        - moved lazy bootstrap from `lua/gesteratops/lazy.lua` to `init.lua`
+        - removed `lua/gesteratops/lazy.lua`
+        - renamed `plugin` to `plugins` and moved into `lua` directory
+        - restructured all plugin config specs to lazy standards
+        - renamed `set.lua` to `settings.lua`
+        - renamed `cmp.lua` to `nvim-cmp.lua`
+        - renamed `keymap.lua` to `keymaps.lua`
+        - removed `remaps.lua` (combined into `keymaps.lua`)
+        - removed `mason.lua` (combined into `nvim-lspconfig.lua`)
+    - startup time reduced to sub 50ms (15-40ms)
+
 Version 2.5
     - removed tetris plugin completely
     - added lazy loading opts to plugins

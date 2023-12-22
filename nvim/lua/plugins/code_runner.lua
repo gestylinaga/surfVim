@@ -1,7 +1,9 @@
 -- Code Runner config from: CRAG666/code_runner.nvim
 -- see doc: https://github.com/CRAG666/code_runner.nvim/blob/main/doc/code_runner.txt
-
-require('code_runner').setup({
+return {
+  "CRAG666/code_runner.nvim",
+  event = "VeryLazy",
+  opts = {
     mode = "float", --other opts: term, toggle, float, tab, toggleterm, buf
     focus = true, -- start in focus
 
@@ -41,4 +43,5 @@ require('code_runner').setup({
     },
     project_path = "",
     project = {},
-})
+  }
+}
