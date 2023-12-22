@@ -1,7 +1,6 @@
-<!-- README.md for surfVim -->
 <!-- TODO:
+    - add/update screenshots
     - add lsp remaps
-    - add install directions
     - add Table of contents if file gets too long
         - syntax: `1. [name](#headerName)`
 -->
@@ -12,6 +11,9 @@
 It contains a collection of remaps/keybinds, configs, and plugins 
 to provide a complete and comfortable IDE experience.
 All conveniently bundled together for EZ deployment.
+
+Powered by [💤 lazy.nvim](https://github.com/folke/lazy.nvim) as a plugin 
+manager.
 
 made by: **gesteratops**
 
@@ -37,15 +39,47 @@ Features added via plugins:
 - [x] File Explorer/Tree
 - [x] File Bookmarks for specific folders
 - [x] Popup Terminal
-- [x] Popup Markdown Preview
+- [x] Popup Markdown Preview (Windows/WSL only)
 - [x] Live Markdown Editing
 - [x] Fancy Improved Statusline
-- [x] Fancy Landing Page and Colorschemes
-- [x] Tetris 
+- [x] Fancy Landing Page and Colorscheme
 
 ## Installation
+1. Backup your existing Neovim config, if necessary
+```sh
+# backup main config directory
+mv ~/.config/nvim{,.bak}
 
-coming soon..
+# optional backups
+mv ~/.local/share/nvim{,.bak}
+mv ~/.local/state/nvim{,.bak}
+mv ~/.cache/nvim{,.bak}
+```
+
+2. Clone this repo
+```sh
+git clone https://github.com/gestylinaga/surfvim
+```
+
+3. Copy surfVim config files into `.config`
+```sh
+cd surfVim && cp -r nvim ~/.config/
+```
+
+4. Start Neovim
+```sh
+# plugins will automatically download/install on first Neovim launch
+nvim
+```
+
+5. Post-Install Checks (commands run inside neovim)
+```sh
+# to check plugins or manually update plugins
+:Lazy
+
+# check health of install
+:checkhealth lazy
+```
 
 ## Screenshots:
 
@@ -53,7 +87,7 @@ coming soon..
 
 ## Requirements:
 - [Neovim - as base text editor](https://github.com/neovim/neovim)
-- [Packer - as plugin manager](https://github.com/wbthomason/packer.nvim)
+    - Version 0.9.0 or higher
 
 ## Usage Cheatsheet:
 
@@ -83,7 +117,7 @@ coming soon..
 | prev tab   | Ctrl | PageUp
 | close tab  | Ctrl | End
 | **New File (from dashboard)**
-| new empty file  | Spc | e
+| new empty file  | Spc | nf
 | **File Tree/Explorer**
 | toggle tree  | Spc | t t 
 | open tree    | Spc | t o
@@ -106,10 +140,9 @@ coming soon..
 
 ## References:
 Project inspired by:
-
 - [Spacevim](https://spacevim.org/), another 'vim distribution'
+- [LazyVim](https://github.com/LazyVim/LazyVim), another 'vim distribution' 
+powered by the [💤 lazy.nvim](https://github.com/folke/lazy.nvim) plugin manager
 - [Lunarvim](https://github.com/LunarVim/LunarVim) another 'vim distribution', the creater documented the 'Neovim From Scratch' process here:
     - [youtube series](https://youtube.com/playlist?list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ)
     - [github page](https://github.com/LunarVim/Neovim-from-scratch)
-
-<!-- README.md for surfVim: html comments work in markdown too wheeeee -->
