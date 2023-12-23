@@ -4,8 +4,13 @@
 vim.g.mapleader = " "
 
 local keymap = vim.keymap
---
+
 -- Basics --
+-- New File
+keymap.set("n", "<leader>nf", "<cmd>ene | startinsert<CR>") -- New File in insert mode
+-- Quit all
+keymap.set("n", "<leader>qq", "<cmd>qa<CR>") -- quit all buffers
+
 -- Splits
 keymap.set("n", "<leader>vs", "<cmd>vs<CR>") -- vertical split
 keymap.set("n", "<leader>hs", "<cmd>split<CR>") -- horizontal split
@@ -50,9 +55,6 @@ keymap.set("n", "<leader>tt", "<cmd>NvimTreeToggle<CR>") -- toggle open/close
 keymap.set("n", "<leader>to", "<cmd>NvimTreeOpen<CR>") -- open file tree
 keymap.set("n", "<leader>tq", "<cmd>NvimTreeClose<CR>") -- close tree
 
--- Dashboard (start screen)
-keymap.set("n", "<leader>e", "<cmd>DashboardNewFile<CR>") -- new empty file
-
 -- Code runner
 keymap.set("n", "<leader>rr", "<cmd>RunCode<CR>") -- code runner
 
@@ -61,11 +63,8 @@ keymap.set("n", "<leader>mm", "<cmd>MarkdownPreview<CR>") -- live edit markdown
 keymap.set("n", "<leader>mo", "<cmd>MarkdownPreviewToggle<CR>") -- open/toggle preview
 keymap.set("n", "<leader>mq", "<cmd>MarkdownPreviewStop<CR>") -- quit/stop preview
 
+-- Glow -- Popup markdown preview (Windows and WSL only)
+keymap.set("n", "<leader>gg", "<cmd>Glow<CR>") -- open glow popup
+
 -- UndoTree (undo history tree/branches)
 --keymap.set("n", "<C-u>", "<cmd>UndotreeToggle<CR>") -- toggle UndoTree
-
--- New File
-keymap.set("n", "<leader>nf", "<cmd>ene | startinsert<CR>") -- live edit markdown
-
--- Quit all
-keymap.set("n", "<leader>qq", "<cmd>qa<CR>") -- live edit markdown

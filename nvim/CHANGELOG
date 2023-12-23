@@ -1,7 +1,16 @@
 surfVim CHANGELOG
 
+Version 3.2
+    - feat: added barbar plugin (replacement for tabline)
+    - fix: readded glow plugin keymaps
+    - fix: readded 'nerdfont' to nvim-cmp sources
+    - fix: fixed nvim-cmp source icons
+    - chore: cleaned `keymaps.lua`
+    - chore: updated dashboard info
+    - chore: cleaned whitespace from some plugins
+
 Version 3.1.1
-    - fixed nvim-web-devicons url dependency to match acros plugins
+    - fixed nvim-web-devicons url dependency to match across plugins
     - fixed glow plugin specs (config -> opts)
 
 Version 3.1

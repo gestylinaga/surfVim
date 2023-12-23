@@ -3,7 +3,8 @@
 -- see doc: https://github.com/nvim-lualine/lualine.nvim/blob/master/doc/lualine.txt
 return {
   "nvim-lualine/lualine.nvim",
-  lazy = false,
+  --lazy = false,
+  event = "VeryLazy",
   dependencies = {
     "nvim-tree/nvim-web-devicons",
   },

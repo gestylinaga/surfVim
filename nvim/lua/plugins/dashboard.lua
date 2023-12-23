@@ -19,7 +19,7 @@ return {
                                              ░                  
     ]]
 
-    logo = string.rep("\n", 9) .. logo .. "\n\n"
+    logo = string.rep("\n", 3) .. logo .. "\n\n"
 
     local opts = {
       theme = "doom",
@@ -42,7 +42,7 @@ return {
       footer = function()
         local stats = require("lazy").stats()
         local ms = (math.floor(stats.startuptime * 100 + 0.5) / 100)
-        return { "⚡ Neovim loaded " .. stats.loaded .. "/" .. stats.count .. " plugins in " .. ms .. "ms" }
+        return { "🌊 surfVim loaded " .. stats.loaded .. "/" .. stats.count .. " plugins in " .. ms .. "ms" }
       end,
     },
     }
