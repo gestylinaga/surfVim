@@ -1,6 +1,6 @@
--- ┌─┐┌─┐┌─┐┌┬┐┌─┐┬─┐┌─┐┌┬┐┌─┐┌─┐┌─┐ surfVim
--- │ ┬├┤ └─┐ │ ├┤ ├┬┘├─┤ │ │ │├─┘└─┐ vimrc
--- └─┘└─┘└─┘ ┴ └─┘┴└─┴ ┴ ┴ └─┘┴  └─┘ plugins managed by lazy.nvim
+-- ┌─┐┬ ┬┬─┐┌─┐╦  ╦┬┌┬┐ by gestyLinaga
+-- └─┐│ │├┬┘├┤ ╚╗╔╝││││ init.lua
+-- └─┘└─┘┴└─└   ╚╝ ┴┴ ┴ plugins managed by lazy.nvim
 
 -- lazy.nvim plugin manager bootstrap
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
@@ -24,6 +24,7 @@ vim.g.loaded = 1
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
+-- launches lazy.nvim
 require("lazy").setup("plugins", {
   change_detection = {
     enabled = true,
@@ -32,6 +33,6 @@ require("lazy").setup("plugins", {
 })
 
 -- Modules not automatically loaded by lazy
-require("gesteratops.keymaps")
-require("gesteratops.settings")
-require("gesteratops.autocmds")
+require("core.keymaps")
+require("core.settings")
+require("core.autocmds")

@@ -1,7 +1,6 @@
--- ┌─┐┌─┐┌─┐┌┬┐┌─┐┬─┐┌─┐┌┬┐┌─┐┌─┐┌─┐ surfVim
--- │ ┬├┤ └─┐ │ ├┤ ├┬┘├─┤ │ │ │├─┘└─┐ neovim
--- └─┘└─┘└─┘ ┴ └─┘┴└─┴ ┴ ┴ └─┘┴  └─┘ keymaps
-vim.g.mapleader = " "
+-- ┌─┐┬ ┬┬─┐┌─┐╦  ╦┬┌┬┐ keymaps
+-- └─┐│ │├┬┘├┤ ╚╗╔╝││││ aka remaps
+-- └─┘└─┘┴└─└   ╚╝ ┴┴ ┴ by gestyLinaga
 
 local keymap = vim.keymap
 

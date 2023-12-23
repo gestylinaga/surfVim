@@ -1,6 +1,6 @@
--- ┌─┐┌─┐┌─┐┌┬┐┌─┐┬─┐┌─┐┌┬┐┌─┐┌─┐┌─┐ surfVim
--- │ ┬├┤ └─┐ │ ├┤ ├┬┘├─┤ │ │ │├─┘└─┐ neovim
--- └─┘└─┘└─┘ ┴ └─┘┴└─┴ ┴ ┴ └─┘┴  └─┘ settings
+-- ┌─┐┬ ┬┬─┐┌─┐╦  ╦┬┌┬┐ settings
+-- └─┐│ │├┬┘├┤ ╚╗╔╝││││ global settings
+-- └─┘└─┘┴└─└   ╚╝ ┴┴ ┴ by gestyLinaga
 
 -- basics --
 vim.g.mapleader = ' ' -- leader key: 'space'

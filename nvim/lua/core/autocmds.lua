@@ -1,6 +1,6 @@
--- ┌─┐┌─┐┌─┐┌┬┐┌─┐┬─┐┌─┐┌┬┐┌─┐┌─┐┌─┐ surfVim
--- │ ┬├┤ └─┐ │ ├┤ ├┬┘├─┤ │ │ │├─┘└─┐ neovim
--- └─┘└─┘└─┘ ┴ └─┘┴└─┴ ┴ ┴ └─┘┴  └─┘ autocmd's
+-- ┌─┐┬ ┬┬─┐┌─┐╦  ╦┬┌┬┐ autocmds
+-- └─┐│ │├┬┘├┤ ╚╗╔╝││││ aka auto-commands
+-- └─┘└─┘┴└─└   ╚╝ ┴┴ ┴ by gestyLinaga
 
 -- Sass silent auto compile on write
 vim.api.nvim_create_autocmd (

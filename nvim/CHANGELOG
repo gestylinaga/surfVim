@@ -1,4 +1,6 @@
-surfVim CHANGELOG
+Version 3.2.1
+    - chore: changed ascii arts across core files
+    - chore: renamed 'gesteratops' directory to 'core'
 
 Version 3.2
     - feat: added barbar plugin (replacement for tabline)
@@ -160,3 +162,11 @@ Version 1.1
 
 Version 1.0
     - NvimFS -- Neovim From Scratch by gesteratops
+
+
+
+                ┌─┐┬ ┬┬─┐┌─┐╦  ╦┬┌┬┐ CHANGELOG
+                └─┐│ │├┬┘├┤ ╚╗╔╝││││
+                └─┘└─┘┴└─└   ╚╝ ┴┴ ┴ by gestyLinaga
+
+
