@@ -4,18 +4,16 @@
     - add Table of contents if file gets too long
         - syntax: `1. [name](#headerName)`
 -->
-# surfVim
+# 🌊 surfVim
 ![surfVim Preview Screenshot](screenshots/surfPreview.png)
 
-***surfVim***, is a personalized **Neovim** distribution built From Scratch. 
+🌊 ***surfVim***, is a personalized **Neovim** distribution built From Scratch. 
 It contains a collection of remaps/keybinds, configs, and plugins 
 to provide a complete and comfortable IDE experience.
 All conveniently bundled together for EZ deployment.
 
 Powered by [💤 lazy.nvim](https://github.com/folke/lazy.nvim) as a plugin 
 manager.
-
-made by: **gesteratops**
 
 ```lua
 -- Showing off Some Example Lua Code: --
@@ -45,7 +43,8 @@ Features added via plugins:
 - [x] Fancy Landing Page and Colorscheme
 
 ## Installation
-1. Backup your existing Neovim config, if necessary
+1. Backup your existing Neovim config (only necessary if **NOT** starting from
+scratch)
 ```sh
 # backup main config directory
 mv ~/.config/nvim{,.bak}
@@ -63,22 +62,23 @@ git clone https://github.com/gestylinaga/surfvim
 
 3. Copy surfVim config files into `.config`
 ```sh
+# WARNING: this will overwrite existing nvim config
 cd surfVim && cp -r nvim ~/.config/
 ```
 
-4. Start Neovim
+4. Start Neovim - Plugins / LSP Servers / Syntax Highlighting will automatically
+install
 ```sh
-# plugins will automatically download/install on first Neovim launch
 nvim
 ```
 
 5. Post-Install Checks (commands run inside neovim)
 ```sh
-# to check plugins or manually update plugins
-:Lazy
-
 # check health of install
 :checkhealth lazy
+
+# to check plugins or manually update plugins
+:Lazy
 ```
 
 ## Screenshots:
@@ -86,13 +86,27 @@ nvim
 coming soon..
 
 ## Requirements:
-- [Neovim - as base text editor](https://github.com/neovim/neovim)
-    - Version 0.9.0 or higher
+- [A True Color Terminal](https://gist.github.com/kurahaupo/6ce0eaefe5e730841f03cb82b061daa2#now-supporting-true-color)
+    - for proper color display
+- [Neovim](https://github.com/neovim/neovim) - Base Text Editor
+    - Version >=0.9.0
+- [Nerd Font](https://github.com/ryanoasis/nerd-fonts) - Patched Fonts
+    - any Nerd Font to properly display glyphs/icons
+- [Ripgrep](https://github.com/BurntSushi/ripgrep) - Improved grep
+    - needed for Telescope fuzzy finding
+- [NPM/Node](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) -
+NodeJS Package Manager
+    - needed for some LSP servers
 
 ## Usage Cheatsheet:
+<details>
+<summary><b>Click to see keymaps</b></summary>
 
 | Action | Modifier | Key combo |
 | ------ | ----- | ----- |
+| **Basics**
+| new empty file | Spc | n f
+| quit all buffers | Spc | q a
 | **Splits**
 | vertical split | Spc | v s 
 | horizontal split | Spc | h s 
@@ -116,8 +130,6 @@ coming soon..
 | next tab   | Ctrl | PageDown
 | prev tab   | Ctrl | PageUp
 | close tab  | Ctrl | End
-| **New File (from dashboard)**
-| new empty file  | Spc | nf
 | **File Tree/Explorer**
 | toggle tree  | Spc | t t 
 | open tree    | Spc | t o
@@ -137,6 +149,7 @@ coming soon..
 | open live preview    | Spc |m m
 | toggle/open preview  | Spc |m o
 | close preview        | Spc |m q
+</details>
 
 ## References:
 Project inspired by:
