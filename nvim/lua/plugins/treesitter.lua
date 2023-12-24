@@ -22,7 +22,6 @@ return {
       "html",
       "css",
       "scss",
-      "go",
       --"c",
       --"rust",
     },

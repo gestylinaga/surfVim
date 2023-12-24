@@ -17,7 +17,6 @@ return {
         'tsserver',
         'cssls',
         'html',
-        'gopls',
         'bashls',
         --'astro,'
       },

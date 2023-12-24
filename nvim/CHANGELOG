@@ -1,3 +1,9 @@
+Version 3.3.1
+    - fix: removed gopls from `nvim-lspconfig.lua`
+        - should be manually installed ONLY if needed
+    - fix: removed go from `treesitter.lua`
+        - should be manually installed ONLY if needed
+
 Version 3.3
     - feat: added Go language support
         - added go to 'ensure_installed' section in `treesitter.lua`
