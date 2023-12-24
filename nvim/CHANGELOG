@@ -1,3 +1,19 @@
+Version 3.3
+    - feat: added Go language support
+        - added go to 'ensure_installed' section in `treesitter.lua`
+        - added gopls LSP in Mason
+        - added gopls to 'ensure_installed' section in `nvim-lspconfig.lua`
+        - added 'go run' command to `code_runner.lua`
+    - feat: added bash language support
+        - added bash to 'ensure_installed' section in `treesitter.lua`
+        - added bashls LSP in Mason
+        - added bashls to 'ensure_installed' section in `nvim-lspconfig.lua`
+    - fix: lspconfig function in `nvim-lspconfig.lua` now works properly
+        - installed LSPs automatically attach and handle capabilities
+        - set lazy loading to false (to attach LSPs on startup)
+    - chore: removed individual LSP setup calls from `nvim-cmp.lua`
+        - automatically handled in `nvim-lspconfig.lua` now
+
 Version 3.2.1
     - chore: changed ascii arts across core files
     - chore: renamed 'gesteratops' directory to 'core'

@@ -3,7 +3,7 @@
 -- docs: https://github.com/neovim/nvim-lspconfig/tree/master/doc
 return {
   'neovim/nvim-lspconfig',
-  event = "VeryLazy", -- neovim native lsp support
+  lazy = false,
   dependencies = {
     'williamboman/mason.nvim', -- LSP manager
     'williamboman/mason-lspconfig.nvim', -- lsp configs
@@ -17,11 +17,12 @@ return {
         'tsserver',
         'cssls',
         'html',
+        'gopls',
+        'bashls',
         --'astro,'
       },
       automatic_installation = true
     })
-    local lspconfig = require('lspconfig')
 
     -- Mappings.
     -- See `:help vim.diagnostic.*` for documentation on any of the below functions
@@ -62,7 +63,7 @@ return {
     -- Call setup on each LSP server
     require('mason-lspconfig').setup_handlers({
       function(server_name)
-        lspconfig[server_name].setup({
+        require("lspconfig")[server_name].setup({
           on_attach = lsp_attach,
           capabilities = lsp_capabilities,
         })
@@ -70,7 +71,7 @@ return {
     })
 
     -- Lua LSP settings
-    lspconfig.lua_ls.setup {
+    require("lspconfig").lua_ls.setup {
       settings = {
         Lua = {
           diagnostics = {

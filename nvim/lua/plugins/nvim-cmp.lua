@@ -134,10 +134,10 @@ return {
             end,
         },
         sources = {
+            { name = "nvim_lsp" },
             { name = "luasnip" },
             { name = "buffer" },
             { name = "path" },
-            { name = "nvim_lsp" },
             { name = "emoji" },
             { name = "nerdfont" },
         },
@@ -161,35 +161,5 @@ return {
           'confirm_done',
           cmp_autopairs.on_confirm_done()
         )
-
-        -- For LSP completion:
-        -- The nvim-cmp almost supports LSP's capabilities so You should advertise it to LSP servers..
-        local capabilities = vim.lsp.protocol.make_client_capabilities()
-        capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
-
-        require'lspconfig'.pyright.setup {
-          capabilities = capabilities,
-        }
-
-        require'lspconfig'.lua_ls.setup {
-          capabilities = capabilities,
-        }
-
-        require'lspconfig'.tsserver.setup {
-          capabilities = capabilities,
-        }
-
-        require'lspconfig'.cssls.setup {
-          capabilities = capabilities,
-        }
-
-        require'lspconfig'.astro.setup {
-          capabilities = capabilities,
-        }
-
-        require'lspconfig'.html.setup {
-          capabilities = capabilities,
-        }
-
     end,
 }

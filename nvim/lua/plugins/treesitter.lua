@@ -13,6 +13,7 @@ return {
     auto_install = true,
     sync_install = true,
     ensure_installed = {
+      "bash",
       "python",
       "markdown",
       "javascript",
@@ -21,6 +22,7 @@ return {
       "html",
       "css",
       "scss",
+      "go",
       --"c",
       --"rust",
     },
