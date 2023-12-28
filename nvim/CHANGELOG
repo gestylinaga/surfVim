@@ -1,3 +1,6 @@
+Version 3.3.2
+    - feat: added diffview.nvim plugin
+
 Version 3.3.1
     - fix: removed gopls from `nvim-lspconfig.lua`
         - should be manually installed ONLY if needed
