@@ -1,1 +1,5 @@
+# local update script
 updateSurf
+
+# local spellcheck dictionary
+nvim/spell

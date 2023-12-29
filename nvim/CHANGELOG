@@ -1,3 +1,7 @@
+Version 3.3.3
+    - feat: added/enabled spellcheck for markdown files
+    - fix: added nvim/spell to .gitignore
+
 Version 3.3.2
     - feat: added diffview.nvim plugin
 
