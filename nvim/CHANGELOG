@@ -1,3 +1,6 @@
+Version 3.3.3-1
+    - fix: changed .gitignore 'spell' search pattern
+
 Version 3.3.3
     - feat: added/enabled spellcheck for markdown files
     - fix: added nvim/spell to .gitignore

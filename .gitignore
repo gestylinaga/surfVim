@@ -2,4 +2,4 @@
 updateSurf
 
 # local spellcheck dictionary
-nvim/spell
+spell/
