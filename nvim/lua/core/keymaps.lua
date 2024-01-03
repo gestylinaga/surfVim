@@ -31,15 +31,6 @@ keymap.set("n", "<C-Right>", "<C-W>l") -- switch focus right
 -- Lazy
 keymap.set("n", "<leader>lz", "<cmd>Lazy<CR>") -- find files
 
--- Harpoon (project bookmarks)
-keymap.set("n", "<leader>h", function() require("harpoon.ui").toggle_quick_menu() end, silent ) -- harpoon quick menu
-keymap.set("n", "<leader>ht", function() require("harpoon.mark").add_file() end, silent) -- add harpoon bookmark "harpoon this"
-keymap.set("n", "<C-u>", function() require("harpoon.ui").nav_file(1) end, silent) -- bookmark 1
-keymap.set("n", "<C-i>", function() require("harpoon.ui").nav_file(2) end, silent) -- bookmark 2
-keymap.set("n", "<C-o>", function() require("harpoon.ui").nav_file(3) end, silent) -- bookmark 3
-keymap.set("n", "<C-p>", function() require("harpoon.ui").nav_file(4) end, silent) -- bookmark 4
-keymap.set("n", "<C-y>", function() require("harpoon.ui").nav_file(5) end, silent) -- bookmark 5 "y do you need this many?"
-
 -- Telescope (fuzzy finder)
 --keymap.set("<leader>f", "<cmd>Telescope<CR>") -- Telescope
 keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<CR>") -- find files

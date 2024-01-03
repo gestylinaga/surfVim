@@ -1,3 +1,8 @@
+Version 3.3.4
+    - feat: harpoon plugin move to 'harpoon2' branch
+    - chore: harpoon plugin remaps move to `harpoon.lua`
+    - chore: remove harpoon remaps from `remaps.lua`
+
 Version 3.3.3-1
     - fix: changed .gitignore 'spell' search pattern
 
