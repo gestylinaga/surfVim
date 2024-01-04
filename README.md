@@ -15,6 +15,8 @@ All conveniently bundled together for EZ deployment.
 Powered by [💤 lazy.nvim](https://github.com/folke/lazy.nvim) as a plugin 
 manager.
 
+See `nvim/CHANGELOG` for detailed changes / commit history.
+
 ```lua
 -- Showing off Some Example Lua Code: --
 local text = "Written completely in Lua! " 
@@ -27,7 +29,7 @@ end
 helloWorld()
 ```
 
-Features added via plugins:
+## 🔌 Features added via plugins:
 - [x] Improved Syntax Highlighting
 - [x] Indent Style Auto Detection
 - [x] Tab Completion 
@@ -37,12 +39,13 @@ Features added via plugins:
 - [x] File Explorer/Tree
 - [x] File Bookmarks for specific folders
 - [x] Popup Terminal
-- [x] Popup Markdown Preview (Windows/WSL only)
+- [x] Popup Markdown Preview
 - [x] Live Markdown Editing
 - [x] Fancy Improved Statusline
 - [x] Fancy Landing Page and Colorscheme
+- [x] Live In-Code Color Highlighting
 
-## Installation
+## 📦 Installation
 1. Backup your existing Neovim config (only necessary if **NOT** starting from
 scratch)
 ```sh
@@ -81,11 +84,10 @@ nvim
 :Lazy
 ```
 
-## Screenshots:
-
+## 📸 Screenshots:
 coming soon..
 
-## Requirements:
+## 🤖 Requirements:
 - [A True Color Terminal](https://gist.github.com/kurahaupo/6ce0eaefe5e730841f03cb82b061daa2#now-supporting-true-color)
     - for proper color display
 - [Neovim](https://github.com/neovim/neovim) - Base Text Editor
@@ -98,7 +100,7 @@ coming soon..
 NodeJS Package Manager
     - needed for some LSP servers
 
-## Usage Cheatsheet:
+## ⌨️ Usage Cheatsheet:
 <details>
 <summary><b>Click to see keymaps</b></summary>
 
@@ -135,12 +137,13 @@ NodeJS Package Manager
 | open tree    | Spc | t o
 | close tree   | Spc | t q
 | **Fuzzy Finder**
+| telescope builtins        | Spc | f t
 | fuzzy find files          | Spc | f f
 | grep find word            | Spc | f g
 | find recent files         | Spc | f r
-| find/switch colorscheme   | Spc | c s 
 | find help                 | Spc | f h
 | find commands             | Spc | f c
+| find/switch colorscheme   | Spc | c s 
 | **Popup Terminal**
 | open code runner  | Spc | r r
 | **Popup Markdown Preview**
@@ -151,11 +154,11 @@ NodeJS Package Manager
 | close preview        | Spc |m q
 </details>
 
-## References:
+## ⚡ References:
 Project inspired by:
-- [Spacevim](https://spacevim.org/), another 'vim distribution'
-- [LazyVim](https://github.com/LazyVim/LazyVim), another 'vim distribution' 
+- [🚀 Spacevim](https://spacevim.org/), another 'vim distribution'
+- [💤 LazyVim](https://github.com/LazyVim/LazyVim), another 'vim distribution' 
 powered by the [💤 lazy.nvim](https://github.com/folke/lazy.nvim) plugin manager
-- [Lunarvim](https://github.com/LunarVim/LunarVim) another 'vim distribution', the creater documented the 'Neovim From Scratch' process here:
+- [🌙 Lunarvim](https://github.com/LunarVim/LunarVim) another 'vim distribution', the creater documented the 'Neovim From Scratch' process here:
     - [youtube series](https://youtube.com/playlist?list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ)
     - [github page](https://github.com/LunarVim/Neovim-from-scratch)
