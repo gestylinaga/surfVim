@@ -1,3 +1,9 @@
+Version 3.4.0
+    - feat: add nvim-colorizer plugin
+    - feat: add fzf-native dependency telescope plugin
+        - adds better fuzzy finding / faster sorting
+    - fix: enable empty 'Telescope' keymap for telescope builtins
+
 Version 3.3.4
     - feat: harpoon plugin move to 'harpoon2' branch
     - chore: harpoon plugin remaps move to `harpoon.lua`

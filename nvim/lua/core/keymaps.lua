@@ -32,7 +32,7 @@ keymap.set("n", "<C-Right>", "<C-W>l") -- switch focus right
 keymap.set("n", "<leader>lz", "<cmd>Lazy<CR>") -- find files
 
 -- Telescope (fuzzy finder)
---keymap.set("<leader>f", "<cmd>Telescope<CR>") -- Telescope
+keymap.set("n", "<leader>ft", "<cmd>Telescope<CR>") -- Telescope
 keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<CR>") -- find files
 keymap.set("n", "<leader>fg", "<cmd>Telescope live_grep<CR>") -- live grep
 keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>") -- recent files
