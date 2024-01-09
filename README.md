@@ -5,7 +5,7 @@
         - syntax: `1. [name](#headerName)`
 -->
 # 🌊 surfVim
-![surfVim Preview Screenshot](screenshots/surfPreview.png)
+![surfVim Preview Screenshot](screenshots/dashboard_screenshot.png)
 
 🌊 ***surfVim***, is a personalized **Neovim** distribution built From Scratch. 
 It contains a collection of remaps/keybinds, configs, and plugins 
@@ -85,7 +85,18 @@ nvim
 ```
 
 ## 📸 Screenshots:
-coming soon..
+<details>
+<summary><b>Click to see screenshots</b></summary>
+
+Plugin shown: **lazy** plugins UI
+![lazy.nvim screenshot](screenshots/lazy_screenshot.png)
+
+Plugin shown: **telescope** `find_files` feature
+![telescope screenshot](screenshots/telescope_screenshot.png)
+
+Plugins shown: **glow** markdown preview & **nvim-tree** file tree
+![glow screenshot](screenshots/glow_screenshot.png)
+</details>
 
 ## 🤖 Requirements:
 - [A True Color Terminal](https://gist.github.com/kurahaupo/6ce0eaefe5e730841f03cb82b061daa2#now-supporting-true-color)
