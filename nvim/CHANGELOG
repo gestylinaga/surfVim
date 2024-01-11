@@ -1,3 +1,7 @@
+Version 3.4.1
+    - fix: change `dependency` to `dependencies` in `harpoon.lua`
+    - chore: add harpoon keymaps location comment to `keymaps.lua`
+
 Version 3.4.0
     - feat: add nvim-colorizer plugin
     - feat: add fzf-native dependency telescope plugin

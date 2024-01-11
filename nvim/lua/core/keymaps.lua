@@ -31,6 +31,9 @@ keymap.set("n", "<C-Right>", "<C-W>l") -- switch focus right
 -- Lazy
 keymap.set("n", "<leader>lz", "<cmd>Lazy<CR>") -- find files
 
+-- Harpoon (project bookmarks)
+-- moved to `lua/plugins/harpoon.lua`; see file for keymaps
+
 -- Telescope (fuzzy finder)
 keymap.set("n", "<leader>ft", "<cmd>Telescope<CR>") -- Telescope
 keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<CR>") -- find files
