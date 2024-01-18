@@ -1,3 +1,7 @@
+Version 3.4.3
+    - fix: remove askRyu plugin
+    - feat: add 'typescript' option to `code_runner.lua`
+
 Version 3.4.2
     - feat: add new 'dev' options to `init.lua`
     - feat: add askRyu personal plugin

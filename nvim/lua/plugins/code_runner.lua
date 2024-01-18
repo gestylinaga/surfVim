@@ -37,8 +37,8 @@ return {
         javascript = "node",
         rust = "cargo run",
         ruby = "ruby",
-        go = "go run"
-        --typescript = "deno run",
+        go = "go run",
+        typescript = "deno run",
         --java = "cd $dir && javac $fileName && java $fileNameWithoutExt",
         --rust = "cd $dir && rustc $fileName && $dir/$fileNameWithoutExt",
     },
