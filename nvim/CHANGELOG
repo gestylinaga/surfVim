@@ -1,3 +1,7 @@
+Version 3.4.2
+    - feat: add new 'dev' options to `init.lua`
+    - feat: add askRyu personal plugin
+
 Version 3.4.1
     - fix: change `dependency` to `dependencies` in `harpoon.lua`
     - chore: add harpoon keymaps location comment to `keymaps.lua`

@@ -26,6 +26,10 @@ vim.g.loaded_netrwPlugin = 1
 
 -- launches lazy.nvim
 require("lazy").setup("plugins", {
+  dev = {
+    path = "~/neovimPlugs",
+    fallback = true,
+  },
   change_detection = {
     enabled = true,
     notify = false,
