@@ -4,7 +4,9 @@ return {
   "ellisonleao/glow.nvim",
   ft = "markdown",
   config = true,
-  cmd = "Glow",
+  keys = {
+    {"<leader>gg", ":Glow<CR>", desc = "Glow markdown preview"}
+  },
   opts = {
     border = "rounded",
     style = "dark",

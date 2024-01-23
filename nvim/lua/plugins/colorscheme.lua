@@ -1,17 +1,16 @@
--- Tokyo Night Color Scheme
+-- NeoVim Color Scheme
 return {
   "folke/tokyonight.nvim",
   lazy = false,
-  opts = {
-    style = "night",
-    styles = {
-      comments = { italic = false },
-      keywords = { italic = false },
-    }
-  },
-  config = function(_, opts)
-    require("tokyonight").setup(opts)
+  config = function()
+    require("tokyonight").setup({
+      style = "night",
+      styles = {
+        comments = { italic = false },
+        keywords = { italic = false },
+      }
+    })
     vim.o.background = "dark"
-    vim.cmd([[colorscheme tokyonight-night]])
+    vim.cmd("colorscheme tokyonight-night")
   end
 }

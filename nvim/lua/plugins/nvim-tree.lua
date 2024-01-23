@@ -3,7 +3,14 @@
 -- https://github.com/kyazdani42/nvim-tree.lua/blob/master/doc/nvim-tree-lua.txt
 return  {
   "kyazdani42/nvim-tree.lua",
-  event = "VeryLazy",
+  cmd = {
+    "NvimTreeToggle",
+  },
+  keys = {
+    {"<leader>tt", ":NvimTreeToggle<CR>", desc = "Nvim-tree toggle"},
+    {"<leader>to", ":NvimTreeOpen<CR>", desc = "Nvim-tree focus"},
+    {"<leader>tq", ":NvimTreeClose<CR>", desc = "Nvim-tree close"},
+  },
   dependencies = {
     "nvim-tree/nvim-web-devicons"
   },

@@ -7,11 +7,6 @@ return {
   dependencies = {},
   build = ":TSUpdate",
   opts = {
-    highlight = {
-      enable = true
-    },
-    auto_install = true,
-    sync_install = true,
     ensure_installed = {
       "bash",
       "python",
@@ -25,9 +20,14 @@ return {
       --"c",
       --"rust",
     },
+    sync_install = true,
+    auto_install = true,
     ignore_install = {},
+    highlight = {
+      enable = true
+    },
   },
-  config = function (_, opts)
+  config = function (opts)
     local configs = require("nvim-treesitter.configs")
     configs.setup(opts)
   end
