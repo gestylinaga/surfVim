@@ -1,3 +1,9 @@
+Version 3.4.4
+    - fix: change lazy loading of code_runner plugin
+        - lazy loaded on keymap
+        - moved keymap from `keymaps.lua` to `code_runner.lua`
+    - feat: add keymaps for diffview plugin
+
 Version 3.4.3
     - fix: remove askRyu plugin
     - feat: add 'typescript' option to `code_runner.lua`

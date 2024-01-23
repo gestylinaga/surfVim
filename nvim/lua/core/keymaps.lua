@@ -49,7 +49,7 @@ keymap.set("n", "<leader>to", "<cmd>NvimTreeOpen<CR>") -- open file tree
 keymap.set("n", "<leader>tq", "<cmd>NvimTreeClose<CR>") -- close tree
 
 -- Code runner
-keymap.set("n", "<leader>rr", "<cmd>RunCode<CR>") -- code runner
+-- moved to `lua/plugins/code_runner.lua`
 
 -- Markdown-Preview (live .md editing)
 keymap.set("n", "<leader>mm", "<cmd>MarkdownPreview<CR>") -- live edit markdown

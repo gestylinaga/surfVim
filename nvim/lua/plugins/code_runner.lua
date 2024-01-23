@@ -2,15 +2,12 @@
 -- see doc: https://github.com/CRAG666/code_runner.nvim/blob/main/doc/code_runner.txt
 return {
   "CRAG666/code_runner.nvim",
-  event = "VeryLazy",
+  keys = {
+    {"<leader>rr", ":RunCode<CR>", desc = "Run Code"},
+  },
   opts = {
     mode = "float", --other opts: term, toggle, float, tab, toggleterm, buf
     focus = true, -- start in focus
-
-    term = {
-        position = belowright,
-        size = 8,
-    },
 
     float = {
         border = "rounded",
