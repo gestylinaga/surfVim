@@ -1,11 +1,11 @@
 <!-- TODO:
-    - add/update screenshots
+    - update screenshots with new colorscheme
     - add lsp remaps
     - add Table of contents if file gets too long
         - syntax: `1. [name](#headerName)`
 -->
 # 🌊 surfVim
-![surfVim Preview Screenshot](screenshots/dashboard_screenshot.png)
+![surfVim Preview Screenshot](screenshots/dashboard_screenshot.webp)
 
 🌊 ***surfVim***, is a personalized **Neovim** distribution built From Scratch. 
 It contains a collection of remaps/keybinds, configs, and plugins 
@@ -15,7 +15,7 @@ All conveniently bundled together for EZ deployment.
 Powered by [💤 lazy.nvim](https://github.com/folke/lazy.nvim) as a plugin 
 manager.
 
-See `nvim/CHANGELOG` for detailed changes / commit history.
+See `CHANGELOG` for detailed changes / commit history.
 
 ```lua
 -- Showing off Some Example Lua Code: --
@@ -44,6 +44,7 @@ helloWorld()
 - [x] Fancy Improved Statusline
 - [x] Fancy Landing Page and Colorscheme
 - [x] Live In-Code Color Highlighting
+- [x] Side-by-side git diff viewer
 
 ## 📦 Installation
 1. Backup your existing Neovim config (only necessary if **NOT** starting from
@@ -58,24 +59,18 @@ mv ~/.local/state/nvim{,.bak}
 mv ~/.cache/nvim{,.bak}
 ```
 
-2. Clone this repo
+2. Clone this repo into your `.config` directory as `nvim`
 ```sh
-git clone https://github.com/gestylinaga/surfvim
+git clone https://github.com/gestylinaga/surfvim ~/.config/nvim
 ```
 
-3. Copy surfVim config files into `.config`
-```sh
-# WARNING: this will overwrite existing nvim config
-cd surfVim && cp -r nvim ~/.config/
-```
-
-4. Start Neovim - Plugins / LSP Servers / Syntax Highlighting will automatically
+3. Start Neovim - Plugins / LSP Servers / Syntax Highlighting will automatically
 install
 ```sh
 nvim
 ```
 
-5. Post-Install Checks (commands run inside neovim)
+4. Post-Install Checks (commands run inside neovim)
 ```sh
 # check health of install
 :checkhealth lazy
@@ -88,14 +83,16 @@ nvim
 <details>
 <summary><b>Click to see screenshots</b></summary>
 
+All screenshots showing `tokyonight-night` color scheme.
+
 Plugin shown: **lazy** plugins UI
-![lazy.nvim screenshot](screenshots/lazy_screenshot.png)
+![lazy.nvim screenshot](screenshots/lazy_screenshot.webp)
 
 Plugin shown: **telescope** `find_files` feature
-![telescope screenshot](screenshots/telescope_screenshot.png)
+![telescope screenshot](screenshots/telescope_screenshot.webp)
 
 Plugins shown: **glow** markdown preview & **nvim-tree** file tree
-![glow screenshot](screenshots/glow_screenshot.png)
+![glow screenshot](screenshots/glow_screenshot.webp)
 </details>
 
 ## 🤖 Requirements:
@@ -119,7 +116,7 @@ NodeJS Package Manager
 | ------ | ----- | ----- |
 | **Basics**
 | new empty file | Spc | n f
-| quit all buffers | Spc | q a
+| quit all buffers | Spc | q q
 | **Splits**
 | vertical split | Spc | v s 
 | horizontal split | Spc | h s 
@@ -160,9 +157,13 @@ NodeJS Package Manager
 | **Popup Markdown Preview**
 | open glow         | Spc | g g
 | **Live Markdown Preview**
-| open live preview    | Spc |m m
-| toggle/open preview  | Spc |m o
-| close preview        | Spc |m q
+| open live preview    | Spc | m m
+| toggle/open preview  | Spc | m o
+| close preview        | Spc | m q
+| **Git Diff View**
+| open diff view   | Spc | d o
+| close diff view  | Spc | d q
+| git file history | Spc | d h
 </details>
 
 ## ⚡ References:

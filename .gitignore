@@ -1,5 +1,6 @@
-# local update script
-updateSurf
-
 # local spellcheck dictionary
 spell/
+
+# local dev plugins
+askRyu.lua
+pomo.lua

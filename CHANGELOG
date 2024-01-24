@@ -1,3 +1,14 @@
+Version 3.5.1
+    - refactor: move `nvim` directory contents into root directory
+    - feat: add new color scheme plugin - rose-pine
+    - chore: moved tokyonight plugin spec to new file: `tokyonight.lua`
+        - set `lazy=true` to only load plugin when needed
+    - docs: update install instructions to match new file system
+    - docs: fix keymaps & add diffview keymaps
+    - chore: convert screenshots from .png to .webp
+    - fix: remove `updateSurf` script from `.gitignore`
+    - feat: add local dev plugins to `.gitignore`
+
 Version 3.5.0
     - fix: update treesitter plugin config
     - fix: clean up indent-blankline plugin config
