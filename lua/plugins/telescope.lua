@@ -27,17 +27,20 @@ return {'nvim-telescope/telescope.nvim',
       build = 'make',
     }
   },
-  opts = {
-    extensions = {
-      fzf = {
-        fuzzy = true,
-        override_generic_sorter = true,
-        override_file_sorter = true,
-        case_mode = 'smart_case',
+  config = function()
+    require("telescope").setup({
+      pickers = {
+        find_files = { hidden = true }
       },
-    },
-  },
-  config = function(opts)
-    require('telescope'):setup(opts)
+      extensions = {
+        fzf = {
+          fuzzy = true,
+          override_generic_sorter = true,
+          override_file_sorter = true,
+          case_mode = "smart_case",
+        },
+      },
+    })
+    require("telescope").load_extension("fzf")
   end
 }
