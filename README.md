@@ -30,21 +30,24 @@ helloWorld()
 ```
 
 ## 🔌 Features added via plugins:
-- [x] Improved Syntax Highlighting
-- [x] Indent Style Auto Detection
-- [x] Tab Completion 
-- [x] Auto ({["'``'"]}) pair completion
-- [x] LSP Support
-- [x] Fuzzy Finding for Files
-- [x] File Explorer/Tree
-- [x] File Bookmarks for specific folders
-- [x] Popup Terminal
-- [x] Popup Markdown Preview
-- [x] Live Markdown Editing
-- [x] Fancy Improved Statusline
-- [x] Fancy Landing Page and Colorscheme
-- [x] Live In-Code Color Highlighting
-- [x] Side-by-side git diff viewer
+- 🎨 Improved Syntax Highlighting ([nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter))
+- ➡️  Indent Style Auto-Detection and Visual Guidelines ([guess-indent](https://github.com/NMAC427/guess-indent.nvim) 
+& [indent-blankline](https://github.com/lukas-reineke/indent-blankline.nvim))
+- 📖 Tab Completion ([nvim-cmp](https://github.com/hrsh7th/nvim-cmp))
+- ✌️  Auto ({["'``'"]}) pair completion ([nvim-autopairs](https://github.com/windwp/nvim-autopairs))
+- 🤖 LSP Support ([nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) 
+& [mason](https://github.com/williamboman/mason.nvim))
+- 🔭 Fuzzy Finding for Files ([telescope](https://github.com/nvim-telescope/telescope.nvim))
+- 📂 File Explorer/Tree ([nvim-tree](https://github.com/nvim-tree/nvim-tree.lua))
+- 🔖 File Bookmarks for specific folders ([harpoon](https://github.com/ThePrimeagen/harpoon))
+- 🖥️ Popup Terminal Runner ([code_runner](https://github.com/CRAG666/code_runner.nvim))
+- 📺 Popup Markdown Preview ([glow](https://github.com/ellisonleao/glow.nvim))
+- 👓 Live Markdown Editing ([markdown-preview](https://github.com/iamcco/markdown-preview.nvim))
+- ➖ Fancy Improved Statusline ([lualine](https://github.com/nvim-lualine/lualine.nvim))
+- 🖼️ Fancy Landing Page and Colorschemes ([dashboard-nvim](https://github.com/nvimdev/dashboard-nvim), 
+[rose-pine](https://github.com/rose-pine/neovim), & [tokyonight](https://github.com/folke/tokyonight.nvim))
+- 🖍️ Live In-Code Color Preview ([nvim-colorizer](https://github.com/norcalli/nvim-colorizer.lua))
+- ↔️  Side-by-side git diff viewer ([diffview](https://github.com/sindrets/diffview.nvim))
 
 ## 📦 Installation
 1. Backup your existing Neovim config (only necessary if **NOT** starting from

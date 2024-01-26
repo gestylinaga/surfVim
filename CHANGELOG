@@ -1,3 +1,8 @@
+Version 3.5.4
+    - fix: update nvim-tree plugin specs and link
+    - docs: replace feature checkmarks with emojis
+    - docs: add links to plugins used
+
 Version 3.5.3
     - feat: add pomo plugin
     - fix: remove `pomo.lua` from .gitignore
