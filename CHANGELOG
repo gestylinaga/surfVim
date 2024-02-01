@@ -1,3 +1,9 @@
+Version 3.5.5
+    - feat: updated telescope plugin config specs
+        - add file ignore patterns for image files
+        - change `find_files` - `hidden` to `false` to hide dotfiles
+    - feat: update installed plugin versions
+
 Version 3.5.4
     - fix: update nvim-tree plugin specs and link
     - docs: replace feature checkmarks with emojis

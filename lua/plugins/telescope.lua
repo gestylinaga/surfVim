@@ -29,8 +29,18 @@ return {'nvim-telescope/telescope.nvim',
   },
   config = function()
     require("telescope").setup({
+      defaults = {
+        file_ignore_patterns = {
+          -- lua regex used here, not normal regex --
+          "%.jpg",
+          "%.webp",
+          "%.png",
+          "%.gif",
+        },
+      },
       pickers = {
-        find_files = { hidden = true }
+        -- show hidden files (dotfiles & files in .gitignore) --
+        find_files = { hidden = false }
       },
       extensions = {
         fzf = {
