@@ -49,6 +49,19 @@ helloWorld()
 - 🖍️ Live In-Code Color Preview ([nvim-colorizer](https://github.com/norcalli/nvim-colorizer.lua))
 - ↔️  Side-by-side git diff viewer ([diffview](https://github.com/sindrets/diffview.nvim))
 
+## 🤖 Prerequisites:
+- [A True Color Terminal](https://gist.github.com/kurahaupo/6ce0eaefe5e730841f03cb82b061daa2#now-supporting-true-color)
+    - for proper color display
+- [Neovim](https://github.com/neovim/neovim) - Base Text Editor
+    - Version >=0.9.0
+- [Nerd Font](https://github.com/ryanoasis/nerd-fonts) - Patched Fonts
+    - any Nerd Font to properly display glyphs/icons
+- [Ripgrep](https://github.com/BurntSushi/ripgrep) - Improved grep
+    - needed for Telescope fuzzy finding
+- [NPM/Node](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) -
+NodeJS Package Manager
+    - needed for some LSP servers
+
 ## 📦 Installation
 1. Backup your existing Neovim config (only necessary if **NOT** starting from
 scratch)
@@ -97,19 +110,6 @@ Plugin shown: **telescope** `find_files` feature
 Plugins shown: **glow** markdown preview & **nvim-tree** file tree
 ![glow screenshot](screenshots/glow_screenshot.webp)
 </details>
-
-## 🤖 Requirements:
-- [A True Color Terminal](https://gist.github.com/kurahaupo/6ce0eaefe5e730841f03cb82b061daa2#now-supporting-true-color)
-    - for proper color display
-- [Neovim](https://github.com/neovim/neovim) - Base Text Editor
-    - Version >=0.9.0
-- [Nerd Font](https://github.com/ryanoasis/nerd-fonts) - Patched Fonts
-    - any Nerd Font to properly display glyphs/icons
-- [Ripgrep](https://github.com/BurntSushi/ripgrep) - Improved grep
-    - needed for Telescope fuzzy finding
-- [NPM/Node](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) -
-NodeJS Package Manager
-    - needed for some LSP servers
 
 ## ⌨️ Usage Cheatsheet:
 <details>
