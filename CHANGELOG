@@ -1,3 +1,7 @@
+Version 3.5.7
+    - feat: add oil.nvim plugin (file explorer/filesystem editor)
+    - fix: remove unused tokyonight colorscheme
+
 Version 3.5.6
     - docs: rename 'requirements' to 'prerequisites' & move above 'installation'
     - chore: update plugin version in `lazy-lock.json`
