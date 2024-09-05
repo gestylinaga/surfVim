@@ -14,11 +14,12 @@ return {
       ensure_installed = {
         'lua_ls',
         'pyright',
-        'tsserver',
+        'tsserver', --deprecated?
+        --'ts_ls',
         'cssls',
         'html',
         'bashls',
-        --'astro,'
+        'astro',
       },
       automatic_installation = true
     })
@@ -62,7 +63,16 @@ return {
     -- Call setup on each LSP server
     require('mason-lspconfig').setup_handlers({
       function(server_name)
-        require("lspconfig")[server_name].setup({
+
+        ----------- temp fix ---------------
+        -- rename tserver to ts_ls
+        if server_name == 'tsserver' then
+          server_name = 'ts_ls'
+        end
+        local capabilities = require('cmp_nvim_lsp').default_capabilities()
+        ------------------------------------
+
+        require('lspconfig')[server_name].setup({
           on_attach = lsp_attach,
           capabilities = lsp_capabilities,
         })

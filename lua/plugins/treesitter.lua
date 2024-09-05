@@ -13,6 +13,7 @@ return {
         "bash",
         "python",
         "markdown",
+        "markdown_inline",
         "javascript",
         "typescript",
         "lua",

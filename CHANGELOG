@@ -1,3 +1,7 @@
+Version 3.5.8
+    - feat: add 'markdown_inline' to 'ensure_installed' treesitter plugin
+    - fix: rename "tsserver" to "ts_ls" in lspconfig (nvim_lspconfig.lua)
+
 Version 3.5.7
     - feat: add oil.nvim plugin (file explorer/filesystem editor)
     - fix: remove unused tokyonight colorscheme
